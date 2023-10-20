@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t sadafshaikh/dockimg:latest .
-        working-directory: ./Dockerfile
+        working-directory: Dockerfile
 
       - name: Push Docker image to Docker Hub
         run: docker push sadafshaikh/dockimg:latest
